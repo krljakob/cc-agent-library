@@ -1,0 +1,115 @@
+<svg width="800" height="240" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Claude Code Agent Library - Flowing Data Streams</title>
+  <desc>Abstract curved paths representing data flow between agents with particle effects</desc>
+  
+  <defs>
+    <linearGradient id="darkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#374151;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1F2937;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="streamGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0891B2;stop-opacity:0" />
+      <stop offset="20%" style="stop-color:#0891B2;stop-opacity:0.8" />
+      <stop offset="80%" style="stop-color:#7C3AED;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0" />
+    </linearGradient>
+    
+    <linearGradient id="streamGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1E40AF;stop-opacity:0" />
+      <stop offset="30%" style="stop-color:#1E40AF;stop-opacity:0.6" />
+      <stop offset="70%" style="stop-color:#CE422B;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#CE422B;stop-opacity:0" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="800" height="240" fill="url(#darkGradient)"/>
+  
+  <!-- Flowing Data Streams -->
+  <g stroke-width="3" fill="none" filter="url(#glow)">
+    <!-- Main data streams -->
+    <path d="M0,60 Q100,40 200,80 Q300,120 400,60 Q500,20 600,80 Q700,120 800,60" 
+          stroke="url(#streamGrad1)" opacity="0.9"/>
+    
+    <path d="M0,120 Q100,140 200,100 Q300,60 400,120 Q500,180 600,120 Q700,80 800,140" 
+          stroke="url(#streamGrad2)" opacity="0.8"/>
+    
+    <path d="M0,180 Q100,200 200,160 Q300,120 400,180 Q500,220 600,160 Q700,120 800,180" 
+          stroke="url(#streamGrad1)" opacity="0.7"/>
+    
+    <!-- Secondary streams -->
+    <path d="M50,90 Q150,70 250,110 Q350,150 450,90 Q550,50 650,110 Q750,150 800,90" 
+          stroke="#0891B2" stroke-width="2" opacity="0.6"/>
+    
+    <path d="M0,140 Q80,160 180,120 Q280,80 380,140 Q480,200 580,140 Q680,100 780,140" 
+          stroke="#7C3AED" stroke-width="2" opacity="0.5"/>
+  </g>
+  
+  <!-- Particle Effects -->
+  <g fill="#F9FAFB" filter="url(#glow)">
+    <!-- Large particles -->
+    <circle cx="150" cy="75" r="4" opacity="0.9"/>
+    <circle cx="350" cy="85" r="5" opacity="0.8"/>
+    <circle cx="550" cy="65" r="4" opacity="0.9"/>
+    
+    <circle cx="120" cy="130" r="3" opacity="0.7"/>
+    <circle cx="320" cy="110" r="4" opacity="0.8"/>
+    <circle cx="520" cy="150" r="3" opacity="0.7"/>
+    
+    <!-- Medium particles -->
+    <circle cx="200" cy="90" r="2.5" opacity="0.6"/>
+    <circle cx="400" cy="70" r="3" opacity="0.7"/>
+    <circle cx="600" cy="100" r="2.5" opacity="0.6"/>
+    
+    <circle cx="180" cy="140" r="2" opacity="0.5"/>
+    <circle cx="380" cy="160" r="2.5" opacity="0.6"/>
+    <circle cx="580" cy="130" r="2" opacity="0.5"/>
+    
+    <!-- Small particles -->
+    <circle cx="80" cy="95" r="1.5" opacity="0.4"/>
+    <circle cx="250" cy="125" r="1" opacity="0.5"/>
+    <circle cx="450" cy="105" r="1.5" opacity="0.4"/>
+    <circle cx="650" cy="135" r="1" opacity="0.5"/>
+    
+    <!-- Tiny particles -->
+    <g opacity="0.3">
+      <circle cx="170" cy="110" r="1"/>
+      <circle cx="330" cy="140" r="0.8"/>
+      <circle cx="530" cy="120" r="1"/>
+      <circle cx="670" cy="155" r="0.8"/>
+      <circle cx="220" cy="175" r="1"/>
+      <circle cx="420" cy="195" r="0.8"/>
+      <circle cx="620" cy="175" r="1"/>
+    </g>
+  </g>
+  
+  <!-- Glowing accent lines -->
+  <g stroke="#0891B2" stroke-width="1" fill="none" opacity="0.4">
+    <path d="M100,50 Q200,30 300,70"/>
+    <path d="M500,40 Q600,20 700,60"/>
+    <path d="M150,200 Q250,220 350,180"/>
+    <path d="M550,210 Q650,230 750,190"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="40" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#F9FAFB">
+    Claude Code
+  </text>
+  <text x="40" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#D1D5DB">
+    Agent Library
+  </text>
+  
+  <!-- Data flow indicators -->
+  <g fill="#0891B2" opacity="0.6" font-family="system-ui, -apple-system, sans-serif" font-size="10">
+    <text x="700" y="30">data flow</text>
+    <text x="720" y="200">processing</text>
+  </g>
+</svg>
