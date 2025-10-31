@@ -106,10 +106,5 @@
   <text x="40" y="80" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#D1D5DB">
     Agent Library
   </text>
-  
-  <!-- Data flow indicators -->
-  <g fill="#0891B2" opacity="0.6" font-family="system-ui, -apple-system, sans-serif" font-size="10">
-    <text x="700" y="30">data flow</text>
-    <text x="720" y="200">processing</text>
   </g>
 </svg>
